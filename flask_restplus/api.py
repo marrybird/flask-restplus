@@ -212,7 +212,7 @@ class Api(restful.Api):
 
     @property
     def specs_url(self):
-        return url_for(self.endpoint('specs'), _external=True)
+        return url_for(self.endpoint('specs'), _external=False)
 
     @property
     def base_url(self):
